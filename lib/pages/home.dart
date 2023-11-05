@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -40,18 +39,16 @@ class HomePage extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: Container(
-            margin: const EdgeInsets.all(10),
-            alignment: Alignment.center,
-            width: 37,
-            decoration: BoxDecoration(
-                color: const Color(0xfff7f7f8),
-                borderRadius: BorderRadius.circular(10)),
-            child: SvgPicture.asset(
-              'assets/icons/menu-svgrepo-com.svg',
-              height: 20,
-              width: 20,
-            ),
-          ),
+              margin: const EdgeInsets.all(10),
+              alignment: Alignment.center,
+              width: 37,
+              decoration: BoxDecoration(
+                  color: const Color(0xfff7f7f8),
+                  borderRadius: BorderRadius.circular(10)),
+              child: const Icon(
+                Icons.menu,
+                color: Colors.black,
+              )),
         )
       ],
     );
