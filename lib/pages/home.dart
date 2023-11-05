@@ -7,37 +7,44 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      body: const Column(
-        children: [
-          Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(12),
-                child: Text(
-                  "Hey there",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 0),
-                child: Text(
-                  "I'm Vinayak",
-                  style: TextStyle(
-                    color: Color(0xAA2563eb),
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+      drawer: drawer(),
+      body: body(),
     );
   }
+
+  Column body() {
+    return const Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(12),
+              child: Text(
+                "Hey there",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 0),
+              child: Text(
+                "I'm Vinayak",
+                style: TextStyle(
+                  color: Color(0xAA2563eb),
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Drawer drawer() => const Drawer();
 
   AppBar appBar() {
     return AppBar(
