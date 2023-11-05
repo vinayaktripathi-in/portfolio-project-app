@@ -9,15 +9,30 @@ class HomePage extends StatelessWidget {
       appBar: appBar(),
       body: const Column(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 10),
-            child: Text(
-              "Hey there",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(12),
+                child: Text(
+                  "Hey there",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-            ),
+              Padding(
+                padding: EdgeInsets.only(left: 0),
+                child: Text(
+                  "I'm Vinayak",
+                  style: TextStyle(
+                    color: Color(0xAA2563eb),
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
